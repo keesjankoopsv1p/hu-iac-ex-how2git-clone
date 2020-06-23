@@ -16,5 +16,24 @@
         </dependency>
     </dependencies>
 
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+            <configuration>
+                <format>ALL</format>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+
     
 </project>
